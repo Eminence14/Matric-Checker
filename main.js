@@ -10,7 +10,7 @@ const currentDate = new Date()
 
 
 for (let i = 0; i < names.length; i++) {
-    if (input.toLowerCase() === names[i]) {
+    if (input.toLowerCase().trim() === names[i]) {
         console.log(`Your matric number is ${matric[i]}`)
         intro.textContent = `This is to certify that you are checking your matric number on ${currentDate}`
         name.textContent = `Your name is ${input.toUpperCase()} and`
